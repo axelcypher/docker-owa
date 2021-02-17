@@ -6,7 +6,7 @@ services:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: owa
       MYSQL_USER: owa
-      MYSQL_PASSWORD: owa
+      MYSQL_PASSWORD: owdd3223zeg23422656ghdfhgsz
   owa:
     image: minyk/owa:dev
     build:
@@ -14,7 +14,7 @@ services:
       args:
         OWA_VERSION: 1.6.2
     ports:
-      - 8080:80
+      - 8480:80
     environment:
-      OWA_PUBLIC_URL: "http://localhost:8080/"
+      OWA_PUBLIC_URL: "https://analytics.themightyaxel.de/"
       OWA_DB_HOST: "percona:3306"
